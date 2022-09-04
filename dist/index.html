@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="./output.css" rel="stylesheet">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+</head>
+
+<body class="w-screen font-libre">
+  <main class="flex flex-col justify-center items-center mx-6 my-8 space-y-4 md:m-12 md:w-1/2 md:mx-auto md:space-y-6">
+    <img class="h-4 w-12 md:mb-4 md:w-20 md:h-6" src="../images/logo.svg" alt="">
+    <h1 class="text-Gray md:text-4xl">We are launching<span class="font-bold text-black"> soon!</span></h1>
+    <p class="text-xs leading-loose font-medium md:text-base">Subscribe and get notified</p>
+    <div
+      class="input-container flex flex-col justify-center items-center space-y-3 w-full md:flex-row md:items-center md:space-y-0 md:space-x-2 md:justify-between md:flex-grow">
+      <input
+        class="text-xs py-3 px-6 rounded-full focus:outline-none focus:border-LightRed focus:0.5 focus:ring-LightRed md:py-4 md:mr-3"
+        type="text" name="input" id="email-text" placeholder="Your email address..." required>
+      <button class="bg-Blue text-white text-xs font-medium py-3 px-4 rounded-full md:w-36 md:py-4 md:px-8"
+        onclick="ValidateEmail(inputText)">Notify
+        Me</button>
+
+    </div>
+    <p id="error-message" class=" text-LightRed italic text-sm relative mr-auto ml-8">Please provide a valid email
+      address</p>
+    <img class="md:pt-6" src="../images/illustration-dashboard.png" alt="">
+    <div class="socials flex flex-row justify-evenly items-center w-1/2 md:w-1/3">
+      <i class="fa-brands fa-facebook text-center"></i>
+      <i class="fa-brands fa-twitter text-center"></i>
+      <i class="fa-brands fa-instagram text-center"></i>
+    </div>
+
+    <footer>
+      <p class="text-xs text-Gray">
+        &copy; Copyright Ping. All rights reserved.
+      </p>
+    </footer>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
