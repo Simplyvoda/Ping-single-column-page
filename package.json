@@ -4,7 +4,7 @@
   "description": "![Design preview for the Ping coming soon page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "build" : "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build" : "npx tailwindcss -i ./src/input.css -o ./dist/output.css"
   },
   "keywords": [],
   "author": "",
